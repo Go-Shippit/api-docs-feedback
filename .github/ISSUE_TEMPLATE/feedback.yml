@@ -1,0 +1,40 @@
+name: Feedback
+description: Help us improve the Shippit developer centre by leaving your feedback
+title: "[Feedback]"
+labels: ["documentation", "feedback", "community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to leave your feedback!
+  - type: dropdown
+    id: navigation
+    attributes:
+      label: Is it easy to find the information you need?
+      options:
+        - "Yes"
+        - "No"
+  - type: dropdown
+    id: instructions
+    attributes:
+      label: Are the instructions clear?
+      options:
+        - "Yes"
+        - "No"
+  - type: textarea
+    id: improvements
+    attributes:
+      label: How could we improve the Shippit Developer Centre?
+      placeholder: Send us your ideas!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        If you need assistance quickly, don't forget that you get in touch with Shippit support using the chat widget in the bottom right corner of the page, or by emailing [support@shippit.com](mailto:support@shippit.com)
